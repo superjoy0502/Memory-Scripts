@@ -9,12 +9,12 @@ using UnityEngine.UI;
 public class Character : MonoBehaviour
 {
 
-    public string jsonName;
+    public string jsonName; // JSON 파일 이름
     
     public TextAsset jsonText;
     
     public string path;
-    public DialogueElements dialogues;
+    public DialogueElements dialogues; // 대화 저장소
 
     public RectTransform panel;
     public TextMeshProUGUI nameTxt;
@@ -22,6 +22,7 @@ public class Character : MonoBehaviour
     
     public bool dialogueActive;
     public int posNum; // 대화 진행도 (에디터 상에서 편집)
+    [HideInInspector]
     public int txtNum; // 대사 진행도
 
     public AudioSource voice;
